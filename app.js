@@ -102,106 +102,106 @@
 // console.log("activeStudents: " + activeStudents);
 
 //
-const signupForm = document.querySelector('#user-signup-form');
-const username = document.querySelector('#username');
-const email = document.querySelector('#email');
-const personal_number = document.querySelector('#personal_number');
-const mobile_number = document.querySelector('#mobile_number');
-const first_name = document.querySelector('#first_name');
-const last_name = document.querySelector('#last_name');
-const zip = document.querySelector('#zip');
-const gender = document.querySelector('#gender');
-const status = document.querySelector('#status');
-const user_id = document.querySelector('#user_id');
-// const position = document.querySelector('#position');
-
-const usernameError = document.querySelector('#username-error');
-const emailError = document.querySelector('#email-error');
-const personal_numberError = document.querySelector('#personal_number-error');
-const mobile_numberError = document.querySelector('#mobile_number-error');
+// const signupForm = document.querySelector('#user-signup-form');
+// const username = document.querySelector('#username');
+// const email = document.querySelector('#email');
+// const personal_number = document.querySelector('#personal_number');
+// const mobile_number = document.querySelector('#mobile_number');
+// const first_name = document.querySelector('#first_name');
+// const last_name = document.querySelector('#last_name');
+// const zip = document.querySelector('#zip');
+// const gender = document.querySelector('#gender');
+// const status = document.querySelector('#status');
+// const user_id = document.querySelector('#user_id');
+// // const position = document.querySelector('#position');
+//
+// const usernameError = document.querySelector('#username-error');
+// const emailError = document.querySelector('#email-error');
+// const personal_numberError = document.querySelector('#personal_number-error');
+// const mobile_numberError = document.querySelector('#mobile_number-error');
 // const positionError = document.querySelector('#position-error');
 
-function validateUsername(){
-  if(!username.validity.valid){
-    username.classList.add('has-error');
-    if(username.validity.tooShort){
-      usernameError.innerText = 'Username must be 4 length or more';
-    } else {
-      usernameError.innerText = 'Username is required.';
-    }
-    return false;
-  } else {
-    username.classList.remove('has-error');
-    username.classList.add('has-success');
-    usernameError.innerText = '';
-    return true;
-  }
-}
+// function validateUsername(){
+//   if(!username.validity.valid){
+//     username.classList.add('has-error');
+//     if(username.validity.tooShort){
+//       usernameError.innerText = 'Username must be 4 length or more';
+//     } else {
+//       usernameError.innerText = 'Username is required.';
+//     }
+//     return false;
+//   } else {
+//     username.classList.remove('has-error');
+//     username.classList.add('has-success');
+//     usernameError.innerText = '';
+//     return true;
+//   }
+// }
 
-function validateEmail(){
-  if(!email.validity.valid){
-    email.classList.add('has-error');
-    if(email.validity.typeMismatch){
-      emailError.innerText = 'Please enter valid email.';
-    } else {
-      emailError.innerText = 'Email is required.';
-    }
-    return false;
-  } else {
-    email.classList.remove('has-error');
-    email.classList.add('has-success');
-    emailError.innerText = '';
-    return true;
-  }
-}
-
-function validatePersonalNumber(){
-  const value = personal_number.value;
-  // console.log(value);
-  if(!personal_number.validity.valid){
-    personal_number.classList.add('has-error');
-    if(personal_number.validity.typeMismatch){
-      personal_numberError.innerText = 'Please enter valid email.';
-    } else {
-      personal_numberError.innerText = 'Email is required.';
-    }
-    return false;
-  } else {
-    if(value.length !== 11) {
-      personal_number.classList.add('has-error');
-      personal_numberError.innerText = 'Please enter valid email.';
-      return false;
-    }
-    personal_number.classList.remove('has-error');
-    personal_number.classList.add('has-success');
-    personal_numberError.innerText = '';
-    return true;
-  }
-}
-
-function validateMobile(){
-  const value = mobile_number.value;
-  // console.log(value);
-  if(!mobile_number.validity.valid){
-    mobile_number.classList.add('has-error');
-    if(mobile_number.validity.typeMismatch){
-      mobile_numberError.innerText = 'Please enter valid email.';
-    } else {
-      mobile_numberError.innerText = 'Email is required.';
-    }
-    return false;
-  } else {
-    if(value.length !== 9) {
-      mobile_number.classList.add('has-error');
-      mobile_numberError.innerText = 'Please enter valid email.';
-      return false;
-    }
-    mobile_number.classList.remove('has-error');
-    mobile_number.classList.add('has-success');
-    mobile_numberError.innerText = '';
-    return true;
-  }
-}
+// function validateEmail(){
+//   if(!email.validity.valid){
+//     email.classList.add('has-error');
+//     if(email.validity.typeMismatch){
+//       emailError.innerText = 'Please enter valid email.';
+//     } else {
+//       emailError.innerText = 'Email is required.';
+//     }
+//     return false;
+//   } else {
+//     email.classList.remove('has-error');
+//     email.classList.add('has-success');
+//     emailError.innerText = '';
+//     return true;
+//   }
+// }
+//
+// function validatePersonalNumber(){
+//   const value = personal_number.value;
+//   // console.log(value);
+//   if(!personal_number.validity.valid){
+//     personal_number.classList.add('has-error');
+//     if(personal_number.validity.typeMismatch){
+//       personal_numberError.innerText = 'Please enter valid email.';
+//     } else {
+//       personal_numberError.innerText = 'Email is required.';
+//     }
+//     return false;
+//   } else {
+//     if(value.length !== 11) {
+//       personal_number.classList.add('has-error');
+//       personal_numberError.innerText = 'Please enter valid email.';
+//       return false;
+//     }
+//     personal_number.classList.remove('has-error');
+//     personal_number.classList.add('has-success');
+//     personal_numberError.innerText = '';
+//     return true;
+//   }
+// }
+//
+// function validateMobile(){
+//   const value = mobile_number.value;
+//   // console.log(value);
+//   if(!mobile_number.validity.valid){
+//     mobile_number.classList.add('has-error');
+//     if(mobile_number.validity.typeMismatch){
+//       mobile_numberError.innerText = 'Please enter valid email.';
+//     } else {
+//       mobile_numberError.innerText = 'Email is required.';
+//     }
+//     return false;
+//   } else {
+//     if(value.length !== 9) {
+//       mobile_number.classList.add('has-error');
+//       mobile_numberError.innerText = 'Please enter valid email.';
+//       return false;
+//     }
+//     mobile_number.classList.remove('has-error');
+//     mobile_number.classList.add('has-success');
+//     mobile_numberError.innerText = '';
+//     return true;
+//   }
+// }
 
 // function validatePessition(){
 //   const value = position.value;
@@ -225,18 +225,18 @@ function validateMobile(){
 // username.addEventListener('input', () => {
 //   validateUsername();
 // });
-
-email.addEventListener('input', () => {
-  validateEmail();
-});
-
-personal_number.addEventListener('input', () => {
-  validatePersonalNumber();
-});
-
-mobile_number.addEventListener('input', () => {
-  validateMobile()
-});
+//
+// email.addEventListener('input', () => {
+//   validateEmail();
+// });
+//
+// personal_number.addEventListener('input', () => {
+//   validatePersonalNumber();
+// });
+//
+// mobile_number.addEventListener('input', () => {
+//   validateMobile()
+// });
 
 // position.addEventListener('input', () => {
 //   validatePessition();
@@ -275,17 +275,17 @@ mobile_number.addEventListener('input', () => {
 //   // }
 // });
 
-const myPromise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('Hi from promise 0 resolve');
-  }, 1000);
-});
-
-async function resolvePromise() {
-  const promiseValue = await myPromise;
-  console.log(promiseValue);
-}
-resolvePromise();
+// const myPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve('Hi from promise 0 resolve');
+//   }, 1000);
+// });
+//
+// async function resolvePromise() {
+//   const promiseValue = await myPromise;
+//   console.log(promiseValue);
+// }
+// resolvePromise();
 //
 // const myPromise1 = new Promise((resolve, reject) => {
 //   setTimeout(() => {
@@ -363,6 +363,25 @@ resolvePromise();
 //   // });
 // }
 
+// TODO: ამის ქვემოთ არის ინსტრუქცია
+
+const signupForm = document.querySelector('#user-signup-form');
+// const username = document.querySelector('#username');
+const email = document.querySelector('#email');
+const personal_number = document.querySelector('#personal_number');
+const mobile_number = document.querySelector('#mobile_number');
+const first_name = document.querySelector('#first_name');
+const last_name = document.querySelector('#last_name');
+const zip = document.querySelector('#zip');
+const gender = document.querySelector('#gender');
+const status = document.querySelector('#status');
+const user_id = document.querySelector('#user_id');
+// const position = document.querySelector('#position');
+
+// const usernameError = document.querySelector('#username-error');
+// const emailError = document.querySelector('#email-error');
+// const personal_numberError = document.querySelector('#personal_number-error');
+// const mobile_numberError = document.querySelector('#mobile_number-error');
 
 signupForm.addEventListener('submit', e => {
   e.preventDefault();
@@ -415,7 +434,7 @@ getUsers();
 /**
  *
  * შეგიძლიათ await response.json() დააბრუნოთ და საიდანაც გამოიძახებთ ამ ფუნქციას,
- * ისიც async უნდა იყოს და იქაც await უნდა დაუწეროთ რომ დატა დაგიბრუნოთ
+ * ისიც async უნდა იყოს და იქაც await უნდა დაუწეროთ გამოძახების წინ რომ დატა დაგიბრუნოთ
  *
  * @param userId
  * @returns {Promise<void>}
