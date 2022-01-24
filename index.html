@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lecture 20</title>
+</head>
+<body>
+<!--<div class="clock "></div>-->
+<!--<div class="slideshow-container">-->
+<!--    <div class="sliders-container">-->
+<!--        <div class="mySlides">-->
+<!--            <img src="https://picsum.photos/1200/400?random=1">-->
+<!--        </div>-->
+<!--        <div class="mySlides">-->
+<!--            <img src="https://picsum.photos/1200/400?random=2">-->
+<!--        </div>-->
+<!--        <div class="mySlides">-->
+<!--            <img src="https://picsum.photos/1200/400?random=3">-->
+<!--        </div>-->
+<!--        <div class="mySlides">-->
+<!--            <img src="https://picsum.photos/1200/400?random=4">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="slideshow-nav">-->
+<!--        <span class="dot" onclick="currentSlide(0)"></span>-->
+<!--        <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--        <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--        <span class="dot" onclick="currentSlide(3)"></span>-->
+<!--    </div>-->
+<!--</div>-->
+<form id="user-signup-form" action="/save-user" method="post" novalidate>
+    <div class="form-field">
+        <label for="first_name">Enter First Name</label>
+        <input id="first_name" type="text" placeholder="First Name" required minlength="4">
+        <span class="field-error" id="first_name-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="last_name">Enter Last name</label>
+        <input id="last_name" type="text" placeholder="Last name" required>
+        <span class="field-error" id="last_name-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="zip">Enter Zip</label>
+        <input id="zip" type="text" placeholder="Zip" required>
+        <span class="field-error" id="zip-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="personal_number">personal_number</label>
+        <input id="personal_number" type="number" placeholder="personal_number" required>
+        <span class="field-error" id="personal_number-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="mobile_number">mobile_number</label>
+        <input id="mobile_number" type="number" placeholder="mobile_number" required>
+        <span class="field-error" id="mobile_number-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="gender">Enter gender</label>
+        <input id="gender" type="text" placeholder="gender" required>
+        <span class="field-error" id="gender-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="email">Enter Email</label>
+        <input id="email" type="email" placeholder="email" required>
+        <span class="field-error" id="email-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="status">Enter status</label>
+        <input id="status" type="text" placeholder="status" required>
+        <span class="field-error" id="status-error"></span>
+    </div>
+    <div class="form-field">
+        <label for="position">position</label>
+        <input id="position" type="text" placeholder="position" maxlength="30">
+        <span class="field-error" id="position-error"></span>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+<script src="app.js"></script>
+</body>
+</html>
